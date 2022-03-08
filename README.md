@@ -1,0 +1,1 @@
+# sample-openshift-php
