@@ -13,8 +13,9 @@ session_start();
 
 	<?php
     require_once("login_db.php");
-	
-    echo "Message is " . $auidence . " " . $message;
+    echo "Message is ";
+    echo $auidence;
+    echo $message;
 	
 	?>
 
