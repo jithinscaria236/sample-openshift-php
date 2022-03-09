@@ -8,7 +8,7 @@ session_start();
 	<title>LAMP App</title>
 	<link rel="stylesheet" href="styles/styles.css">
 </head>
-<body>
+<body bgcolor="yellow">
 	<h1>LAMP App</h1>
 
 	<?php
