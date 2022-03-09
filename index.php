@@ -12,6 +12,7 @@ session_start();
 	<h1>LAMP App</h1>
 
 	<?php
+    require_once("login_db.php");
 	
     echo "Message is " . $auidence . " " . $message;
 	
