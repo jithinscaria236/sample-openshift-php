@@ -12,8 +12,8 @@ metadata:
       a LAMP application, including a build configuration, application deployment
       configuration, and database deployment configuration. The database is stored
       in persistent storage.
-    openshift.io/provider-display-name: Harris Corporation - Martin Morales
-    openshift.io/documentation-url: https://github.com/martin-morales/sample-openshift-php
+    openshift.io/provider-display-name: Jithin Scaria
+    openshift.io/documentation-url: https://github.com/jithinscaria236/sample-openshift-php.git
     template.openshift.io/bindable: 'false'
 message: 'The following service(s) have been created in your project: ${NAME}, ${DATABASE_SERVICE_NAME}.'
 labels:
@@ -76,7 +76,7 @@ parameters:
   displayName: Git Repository URL
   description: The URL of the repository with your application source code.
   required: true
-  value: https://github.com/jithinscaria236/sample-openshift-php.git
+  value: https://github.com/martin-morales/sample-openshift-php
 - name: SOURCE_REPOSITORY_REF
   displayName: Git Reference
   description: Set this to a branch name, tag or other ref of your repository if you
@@ -193,6 +193,11 @@ objects:
           image: " "
           ports:
           - containerPort: 8080
+          env:
+          - name: HELLO_AUDIENCE
+            value: ${HELLO_AUDIENCE)
+          - name: HELLO_MESSAGE
+            value: ${HELLO_MESSAGE)
           readinessProbe:
             timeoutSeconds: 3
             initialDelaySeconds: 3
