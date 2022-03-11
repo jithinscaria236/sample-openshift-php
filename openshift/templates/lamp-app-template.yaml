@@ -250,9 +250,9 @@ objects:
           - containerPort: 3306
           env:
           - name: HELLO_AUDIENCE
-            value: ${HELLO_AUDIENCE)
+            value: "${HELLO_AUDIENCE)"
           - name: HELLO_MESSAGE
-            value: ${HELLO_MESSAGE)
+            value: "${HELLO_MESSAGE)"
           - name: MYSQL_USER
             valueFrom:
               secretKeyRef:
