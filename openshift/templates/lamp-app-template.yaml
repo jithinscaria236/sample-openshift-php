@@ -195,9 +195,9 @@ objects:
           - containerPort: 8080
           env:
           - name: HELLO_AUDIENCE
-            value: ${HELLO_AUDIENCE)
+            value: "${HELLO_AUDIENCE)"
           - name: HELLO_MESSAGE
-            value: ${HELLO_MESSAGE)
+            value: "${HELLO_MESSAGE)"
           readinessProbe:
             timeoutSeconds: 3
             initialDelaySeconds: 3
